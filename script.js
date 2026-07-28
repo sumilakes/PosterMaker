@@ -1,45 +1,38 @@
 function createPoster(){
 
-
 let title =
 document.getElementById("title").value;
 
-
 let subtitle =
 document.getElementById("subtitle").value;
-
 
 let theme =
 document.getElementById("theme").value;
 
 
-
-document.getElementById("posterTitle")
-.innerText =
+document.getElementById("posterTitle").innerText =
 title || "NEW TITLE";
 
 
-document.getElementById("posterSubtitle")
-.innerText =
+document.getElementById("posterSubtitle").innerText =
 subtitle || "YOUR MESSAGE";
-
 
 
 let poster =
 document.getElementById("poster");
 
+
 poster.className="";
 
 
 if(theme==="dark"){
-poster.classList.add("dark");
+    poster.classList.add("dark");
 }
 
 
 if(theme==="future"){
-poster.classList.add("future");
+    poster.classList.add("future");
 }
-
 
 
 }
@@ -71,7 +64,7 @@ function(e){
 document
 .getElementById("poster")
 .style.backgroundImage =
-`url(${e.target.result})`;
+"url(" + e.target.result + ")";
 
 
 };
