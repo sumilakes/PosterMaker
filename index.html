@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PosterMaker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎨 PosterMaker</h1>
+
+<input id="title" placeholder="输入标题">
+<input id="subtitle" placeholder="输入副标题">
+
+<select id="theme">
+<option value="city">足球蓝</option>
+<option value="dark">黑金</option>
+<option value="future">未来科技</option>
+</select>
+
+<button onclick="createPoster()">
+生成海报
+</button>
+
+
+<div id="poster">
+
+<h2 id="posterTitle">
+你的标题
+</h2>
+
+<p id="posterSubtitle">
+你的副标题
+</p>
+
+</div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
