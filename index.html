@@ -29,7 +29,23 @@ accept="image/*">
 生成海报
 </button>
 
+<h3>⚽ AI足球文案生成</h3>
 
+<input id="team"
+placeholder="球队，例如 Manchester City">
+
+<input id="player"
+placeholder="球员，例如 Haaland">
+
+<select id="style">
+<option value="battle">热血战斗</option>
+<option value="elite">冠军风格</option>
+<option value="future">未来科技</option>
+</select>
+
+<button onclick="generateAIText()">
+AI生成文案
+</button>
 <div id="poster">
 
 <h2 id="posterTitle">
